@@ -1,0 +1,250 @@
+/* GLOBAL */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #424646;
+    font-family: 'Sacramento', cursive;
+    font-size: 90px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #32b1b0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(63deg, rgba(34,195,191,1) 0%, rgba(252,137,255,1) 100%);
+    position: relative;
+    padding-top: 100px;
+}
+
+.cloud-one {
+    position: relative;
+    top: 10px;
+    left: 250px;
+}
+
+.cloud-two {
+    position: absolute;
+}
+
+.mountain-img {
+   margin-bottom: -4px; 
+}
+
+
+/* MIDDLE SECTION */
+
+.middle-container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.bg-photo-img {
+    width: 280px;
+    height: 280px;
+    background-color: #424646;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); 
+    transition: 0.9s;
+}
+
+.profile-img {
+    position: absolute;
+    border-bottom-right-radius: 50% 30%;
+    border-bottom-left-radius: 50% 30%;
+    top: -46px;
+    left: 22px;
+}
+
+.education-row {
+    width: 70%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+    display: flex;
+}
+
+.education-img-div {
+    flex: 30%;
+    position: relative;
+}
+
+.education-description-div {
+    flex: 70%;
+    margin-left: 40px;
+}
+
+.education-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  
+}
+
+.skills-row {
+    width: 70%;
+    margin: 100px auto;
+    text-align: right;
+    line-height: 2;
+    display: flex;
+}
+
+.skills-img-div {
+    flex: 30%;
+    position: relative;
+}
+
+.skills-description-div {
+    flex: 70%;
+    margin-right: 40px;
+}
+
+.skills-code-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  
+}
+
+.work-row {
+    width: 70%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+    display: flex;
+}
+
+.work-img-div {
+    flex: 30%;
+    position: relative;
+}
+
+.work-description-div {
+    flex: 70%;
+    margin-left: 40px;
+}
+
+.work-code-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(63deg, rgba(34,195,191,1) 0%, rgba(252,137,255,1) 100%);
+}
+
+footer  h2 {
+    color: #424646;
+    padding-top: 40px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+footer img {
+    width: 5%;
+    padding: 0 15px 0 15px;
+}
+
+/* RWD */
+
+@media (max-width: 640px) {
+    .education-row  {
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .skills-row  {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        text-align: center;
+        
+      }
+
+      .work-row  {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .cloud-one {
+        position: relative;
+        top: 10px;
+        left: 130px;
+        width: 20%;
+      }
+
+      .mountain-img {
+        margin-bottom: -4px; 
+        width: 100%;
+     }
+
+     .education-img-div {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .skills-img-div {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .work-img-div {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+     .education-description-div {
+        margin: 0 auto;
+        text-align: center;
+     }
+
+    .skills-description-div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .work-description-div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 20px;
+    }
+
+   footer img {
+    width: 10%;
+   }
+
+}
